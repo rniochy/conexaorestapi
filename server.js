@@ -1,16 +1,23 @@
 import express from 'express'
 import cors from 'cors'
-import './database/bdConection.js'
-import router  from './route/usuario.js'
+import dotenv from 'dotenv'
 
+import './database/bdConection.js'
+import routerUser  from './controller/usuario.js'
+import routerProject from './controller/projecto.js'
+import routerTask from './controller/tarefa.js'
+
+dotenv.config()
 const app = express()
-const port = process.PORT || 3000
+const port = process.env.PORT || 3001
 
 app.use(cors())
-
 app.use(express.json())
 
-app.use('/user', router)
+app.use('/user', routerUser)
+
+app.use('/project', routerProject)
+app.use('/task', routerTask)
 
 app.listen(port, ()=>{
        console.log("SERVER RUNNING ...")
