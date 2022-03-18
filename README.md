@@ -8,6 +8,18 @@ armazenamento dos dados das entidades supracitada.
 As palavras passes do usuario são criptografadas com o modulo bycriptjs 
 jsonwebtoken foi usado para dar autenticidade ao usuário em algumas rotas 
 <br/>
+
+<h3> Techs usadas </h3>
+<ul>
+<li><h4>Javascript</h4></li>
+<li>NodeJS</li>
+<li>Express</li>
+<li>MongoDB</li>
+<li>JsonWebToken</li>
+</ul>
+
+
+<br/>
 <h2> Just BACKEND </h2>
 Foi construida apenas a parte do backend 
 mas tem como testar as requisições com a extensão VSCODE 
